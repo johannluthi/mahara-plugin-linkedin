@@ -4,7 +4,7 @@
     xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
     <TABLES>
-        <TABLE NAME="usr_security_token_2">
+        <TABLE NAME="usr_security_token">
             <FIELDS>
                 <FIELD NAME="usr" TYPE="int" LENGTH="10" NOTNULL="true" />
                 <FIELD NAME="app" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT=""/>
