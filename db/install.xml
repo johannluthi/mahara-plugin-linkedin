@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="lib/db" VERSION="20061127" COMMENT="XMLDB file for Mahara's linkedin-related tables"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="usr_security_token_2">
+            <FIELDS>
+                <FIELD NAME="usr" TYPE="int" LENGTH="10" NOTNULL="true" />
+                <FIELD NAME="app" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT=""/>
+                <FIELD NAME="token" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT=""/>
+                <FIELD NAME="salt" TYPE="char" LENGTH="255" NOTNULL="false" DEFAULT=""/>
+                <FIELD NAME="profile" TYPE="char" LENGTH="255" NOTNULL="false" DEFAULT=""/>
+                <FIELD NAME="ctime" TYPE="datetime" NOTNULL="true" />
+                <FIELD NAME="data" TYPE="text" NOTNULL="false" />
+            </FIELDS>
+
+            <KEYS>
+                <KEY NAME="usrscuritytokenpk" TYPE="primary" FIELDS="usr" />
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
