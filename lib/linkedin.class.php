@@ -160,7 +160,7 @@ class linkedin
 
 		$ch = curl_init(); 
 		curl_setopt($ch, CURLOPT_URL, "https://api.linkedin.com/v1/people/~/shares?oauth2_access_token=$token");
-        curl_setopt($ch, CURLOPT_CAPATH, $capath = realpath(dirname(__FILE__) . '/../ca'));
+                curl_setopt($ch, CURLOPT_CAPATH, $capath = realpath(dirname(__FILE__) . '/../ca'));
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: text/xml'));
